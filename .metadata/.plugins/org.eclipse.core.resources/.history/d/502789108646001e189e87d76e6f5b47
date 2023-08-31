@@ -1,0 +1,96 @@
+package org.onlinebookstore.books;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JTextField;
+import javax.swing.JTextArea;
+import javax.swing.JComboBox;
+import com.jgoodies.forms.layout.FormLayout;
+import com.jgoodies.forms.layout.ColumnSpec;
+import com.jgoodies.forms.layout.RowSpec;
+import com.jgoodies.forms.layout.FormSpecs;
+
+public class CustomerSignUp extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField textField_3;
+	private JTextField textField_4;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					CustomerSignUp frame = new CustomerSignUp();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public CustomerSignUp() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(0, 160, 800, 600);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(new FormLayout(new ColumnSpec[] {
+				ColumnSpec.decode("278px"),
+				ColumnSpec.decode("215px"),},
+			new RowSpec[] {
+				RowSpec.decode("131px"),
+				RowSpec.decode("20px"),
+				RowSpec.decode("20px"),
+				RowSpec.decode("20px"),
+				RowSpec.decode("27px"),
+				RowSpec.decode("20px"),
+				RowSpec.decode("27px"),
+				RowSpec.decode("20px"),
+				RowSpec.decode("26px"),
+				RowSpec.decode("22px"),
+				RowSpec.decode("22px"),
+				RowSpec.decode("20px"),
+				FormSpecs.UNRELATED_GAP_ROWSPEC,
+				RowSpec.decode("22px"),}));
+		
+		textField = new JTextField();
+		contentPane.add(textField, "2, 2, left, top");
+		textField.setColumns(10);
+		
+		textField_1 = new JTextField();
+		contentPane.add(textField_1, "2, 4, left, top");
+		textField_1.setColumns(10);
+		
+		textField_2 = new JTextField();
+		contentPane.add(textField_2, "2, 6, left, top");
+		textField_2.setColumns(10);
+		
+		textField_3 = new JTextField();
+		contentPane.add(textField_3, "2, 8, left, top");
+		textField_3.setColumns(10);
+		
+		JTextArea textArea = new JTextArea();
+		contentPane.add(textArea, "2, 10, fill, top");
+		
+		textField_4 = new JTextField();
+		contentPane.add(textField_4, "2, 12, left, top");
+		textField_4.setColumns(10);
+		
+		JComboBox comboBox = new JComboBox();
+		contentPane.add(comboBox, "2, 14, fill, top");
+	}
+}

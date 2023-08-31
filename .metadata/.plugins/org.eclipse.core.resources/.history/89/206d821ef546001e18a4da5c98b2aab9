@@ -1,0 +1,129 @@
+package org.onlinebookstore.books;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JTextField;
+import javax.swing.JTextArea;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+
+public class CustomerSignUp extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField Name;
+	private JTextField Email;
+	private JTextField Password;
+	private JTextField Confirm_Password;
+	private JTextField Pincode;
+	private JTextField Phone_Number;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					CustomerSignUp frame = new CustomerSignUp();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public CustomerSignUp() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(0, 160, 800, 600);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		Name = new JTextField();
+		Name.setBounds(293, 131, 96, 20);
+		contentPane.add(Name);
+		Name.setColumns(10);
+		
+		Email = new JTextField();
+		Email.setBounds(293, 171, 96, 20);
+		contentPane.add(Email);
+		Email.setColumns(10);
+		
+		Password = new JTextField();
+		Password.setBounds(293, 218, 96, 20);
+		contentPane.add(Password);
+		Password.setColumns(10);
+		
+		Confirm_Password = new JTextField();
+		Confirm_Password.setBounds(293, 265, 96, 20);
+		contentPane.add(Confirm_Password);
+		Confirm_Password.setColumns(10);
+		
+		JTextArea Address = new JTextArea();
+		Address.setBounds(278, 311, 161, 22);
+		contentPane.add(Address);
+		
+		Pincode = new JTextField();
+		Pincode.setBounds(293, 355, 96, 20);
+		contentPane.add(Pincode);
+		Pincode.setColumns(10);
+		
+		JComboBox City = new JComboBox();
+		City.setBounds(293, 386, 116, 22);
+		contentPane.add(City);
+		
+		Phone_Number = new JTextField();
+		Phone_Number.setBounds(293, 418, 96, 20);
+		contentPane.add(Phone_Number);
+		Phone_Number.setColumns(10);
+		
+		JComboBox Country = new JComboBox();
+		Country.setBounds(293, 458, 116, 22);
+		contentPane.add(Country);
+		
+		JLabel lblNewLabel = new JLabel("Name");
+		lblNewLabel.setBounds(213, 134, 49, 14);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblEmailId = new JLabel("Email ID");
+		lblEmailId.setBounds(213, 174, 49, 14);
+		contentPane.add(lblEmailId);
+		
+		JLabel lblPassword = new JLabel("Password");
+		lblPassword.setBounds(213, 221, 49, 14);
+		contentPane.add(lblPassword);
+		
+		JLabel lblConfirmPassword = new JLabel("Confirm Password");
+		lblConfirmPassword.setBounds(213, 268, 49, 14);
+		contentPane.add(lblConfirmPassword);
+		
+		JLabel lblAddress = new JLabel("Address");
+		lblAddress.setBounds(213, 316, 49, 14);
+		contentPane.add(lblAddress);
+		
+		JLabel lblPincode = new JLabel("Pincode");
+		lblPincode.setBounds(213, 358, 49, 14);
+		contentPane.add(lblPincode);
+		
+		JLabel lblCity = new JLabel("City");
+		lblCity.setBounds(213, 390, 49, 14);
+		contentPane.add(lblCity);
+		
+		JLabel lblPhoneNumber = new JLabel("Phone Number");
+		lblPhoneNumber.setBounds(213, 421, 49, 14);
+		contentPane.add(lblPhoneNumber);
+		
+		JLabel lblCountry = new JLabel("Country");
+		lblCountry.setBounds(213, 462, 49, 14);
+		contentPane.add(lblCountry);
+	}
+}

@@ -1,0 +1,22 @@
+
+public class Inbuild {
+	
+	public static void main(String args [])
+	{
+		String s1 = "javaclass";
+		System.out.println(s1.length());
+		
+		System.out.println(String.format(s1));
+		
+		String s2 = String.format("%s", s1);
+		String s3 = String.format("%d", 101);
+		String s4 = String.format("%f", 102.00);
+		String s5 = String.format("%c", 'h');
+		
+		System.out.println(s2);
+		System.out.println(s3);
+		System.out.println(s4);
+		System.out.println(s5);
+	}
+
+}

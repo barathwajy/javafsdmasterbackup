@@ -1,0 +1,15 @@
+package jdbclearn;
+
+import java.sql.DriverManager;
+
+public class JDBCeg {
+	
+	public static void main(String args[]) throws ClassNotFoundException
+	{
+		Class.forName("com.mysql.jdbc.Driver");
+		
+		Connection c1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/learn1","root","root");
+	
+	}
+
+}

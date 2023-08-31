@@ -1,0 +1,14 @@
+package collections101;
+
+import java.util.concurrent.ArrayBlockingQueue;
+
+public class Queue101 {
+	
+	public static void main(String args[])
+	{
+		ArrayBlockingQueue<String> b1 = new ArrayBlockingQueue<String>(5);
+		b1.put("1");
+		b1.put("1");
+	}
+
+}

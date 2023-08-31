@@ -1,0 +1,15 @@
+package junit_test_demo;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.EnabledOnOs;
+import org.junit.jupiter.api.condition.OS;
+
+public class Testing5_101 {
+	@Test
+	@EnabledOnOs(OS.MAC)
+	public void os()
+	{
+		System.out.println("I run @ win");
+	}
+
+}

@@ -1,0 +1,13 @@
+package org.onlinebookstore.books;
+
+public class DB_Connect {
+	
+	public static void connect()
+	{
+		try {
+			
+		}
+	}
+
+}
+

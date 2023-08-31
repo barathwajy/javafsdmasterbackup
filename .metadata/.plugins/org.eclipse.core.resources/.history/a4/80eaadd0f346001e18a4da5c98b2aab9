@@ -1,0 +1,29 @@
+package junit_test_demo;
+
+import java.util.Scanner;
+
+
+
+
+public class Demotest {
+	
+	public int add(int i, int j) {
+		// TODO Auto-generated method stub
+		return i+j;
+	}
+	
+	public static void main(String args[])
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		int a = sc.nextInt();
+		
+		
+		}
+
+		public int throwexception()
+		{
+			return 0/10;
+		}
+	
+}

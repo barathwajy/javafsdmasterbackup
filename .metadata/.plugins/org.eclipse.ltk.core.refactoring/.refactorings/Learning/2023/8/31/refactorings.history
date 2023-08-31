@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Java_learning_strings&apos; to &apos;Self learning and practices&apos;&#x0D;&#x0A;- Original project: &apos;Learning&apos;&#x0D;&#x0A;- Destination element: &apos;Self learning and practices&apos;&#x0D;&#x0A;- Original element: &apos;Java_learning_strings&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move folder" destination="=Self learning and practices" element1="Java_learning_strings" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1691140036754" units="0" version="1.0"/>
+</session>

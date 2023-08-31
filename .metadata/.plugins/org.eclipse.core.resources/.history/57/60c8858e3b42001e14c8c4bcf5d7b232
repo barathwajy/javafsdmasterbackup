@@ -1,0 +1,36 @@
+package jdbclearn;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class JDBCeg {
+	
+	public static void main(String args[]) throws ClassNotFoundException, SQLException
+	{
+	
+	
+		
+		try
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			Connection c1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/learn1","root","root");
+			Statement s = c1.createStatement();
+			ResultSet s1 = s.executeQuery("select * from member");
+			System.out.println(s1);
+			
+			while(s1.next())
+				System.out.println(s1.getInt(0) + s1.getString(1));
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+	}
+
+}

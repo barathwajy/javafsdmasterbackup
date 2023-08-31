@@ -1,0 +1,11 @@
+
+public class Comparing {
+	
+	public static void main(String args[])
+	{
+		String n1 = "java";
+		String n2 = new String("java");
+		System.out.println((n1==n2));
+		System.out.print((n1.equals(n2)));
+	}
+}

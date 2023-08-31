@@ -1,0 +1,18 @@
+package testing_d;
+
+import static org.junit.Assert.assertThrows;
+
+public class Exceptiondemo {
+	
+	@Test
+	public void Bank()
+	{
+		Throwable t1 = assertThrows();
+	}
+	
+	public int div(int a, int b)
+	{
+		return a/b;
+	}
+
+}

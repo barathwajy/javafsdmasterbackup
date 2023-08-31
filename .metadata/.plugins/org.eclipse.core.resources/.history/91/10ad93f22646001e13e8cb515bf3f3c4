@@ -1,0 +1,23 @@
+package testing_d;
+
+import org.junit.jupiter.api.Test;
+
+import junit_test_demo.Demotest;
+
+public class DemoTesting1 {
+
+	@Test
+	public void Test1()
+	{
+		Demotest d1 = new Demotest();
+		System.out.println(d1.add(10,20));
+	}
+	
+	@Test
+	public void Test2()
+	{
+		Demotest d1 = new Demotest();
+		System.out.println(d1.add(23,20));
+	}
+	
+}

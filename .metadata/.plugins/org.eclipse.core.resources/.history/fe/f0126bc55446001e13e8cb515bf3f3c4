@@ -1,0 +1,59 @@
+package org.onlinebookstore.books;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import javax.swing.JTextField;
+import javax.swing.JPasswordField;
+
+public class CustomerSignIn extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+	private JPasswordField passwordField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					CustomerSignIn frame = new CustomerSignIn();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public CustomerSignIn() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(160, 0, 800, 600);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton btnNewButton = new JButton("New button");
+		btnNewButton.setBounds(292, 255, 89, 23);
+		contentPane.add(btnNewButton);
+		
+		textField = new JTextField();
+		textField.setBounds(273, 158, 129, 20);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		passwordField = new JPasswordField();
+		passwordField.setBounds(273, 207, 129, 20);
+		contentPane.add(passwordField);
+	}
+}

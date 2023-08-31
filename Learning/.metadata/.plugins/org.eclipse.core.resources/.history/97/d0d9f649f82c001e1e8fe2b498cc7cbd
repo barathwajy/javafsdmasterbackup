@@ -1,0 +1,23 @@
+
+public class Mysterykey {
+
+	public static void main(String args[])
+	{
+		int N =5;
+		System.out.print(N/2);
+		if(N%2 != 0)
+		{
+			int a = N+1;
+		}
+		else {
+			int a = N;
+		}
+		
+		
+		
+		//for(int i=2; i<=N; i++)
+		//{
+			
+		//}
+	}
+}

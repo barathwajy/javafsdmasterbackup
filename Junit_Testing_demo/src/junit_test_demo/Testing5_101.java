@@ -1,0 +1,32 @@
+package junit_test_demo;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.EnabledForJreRange;
+import org.junit.jupiter.api.condition.EnabledOnJre;
+import org.junit.jupiter.api.condition.EnabledOnOs;
+import org.junit.jupiter.api.condition.JRE;
+import org.junit.jupiter.api.condition.OS;
+
+public class Testing5_101 {
+	@Test
+	@EnabledOnOs(OS.WINDOWS)
+	public void os()
+	{
+		System.out.println("I run @ win");
+	}
+	@Test
+	@EnabledOnJre(JRE.JAVA_18)
+	public void jre()
+	{
+		System.out.println("I run @ java18");
+	}
+
+	
+	@Test
+	@EnabledForJreRange(min=JRE.JAVA_8,max=JRE.JAVA_18)
+	public void jrer()
+	{
+		System.out.println("I run @ j20");
+	}
+
+}

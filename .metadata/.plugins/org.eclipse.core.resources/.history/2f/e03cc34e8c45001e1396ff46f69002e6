@@ -1,0 +1,21 @@
+package org.onlinebookstore.books;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DB_Connect {
+	
+	public static void connect()
+	{
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection c1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/books","root","root");
+			
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+
+}
+

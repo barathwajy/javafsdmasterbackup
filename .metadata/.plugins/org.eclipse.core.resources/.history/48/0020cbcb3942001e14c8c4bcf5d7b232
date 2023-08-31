@@ -1,0 +1,10 @@
+package jdbclearn;
+
+public class JDBCeg {
+	
+	public static void main(String args[])
+	{
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package collections101;
+
+import java.util.LinkedList;
+
+public class Linkedlist101 {
+
+		public static void main(String args[])
+		{
+			LinkedList l1 =new LinkedList();
+			l1.add("karthika");
+			l1.add(120);
+			System.out.println(l1);
+		}
+}

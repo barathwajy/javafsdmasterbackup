@@ -1,0 +1,22 @@
+package collections101;
+
+import java.util.concurrent.ArrayBlockingQueue;
+
+public class Queue101 {
+	
+	public static void main(String args[]) throws InterruptedException
+	{
+		ArrayBlockingQueue<String> b1 = new ArrayBlockingQueue<String>(5);
+		b1.put("1");
+		b1.put("2");
+		b1.put("3");
+		b1.put("4");
+		b1.put("5");
+		System.out.println(b1);
+		b1.put("6");
+		System.out.println(b1);
+		b1.remove();
+		System.out.println(b1);
+	}
+
+}

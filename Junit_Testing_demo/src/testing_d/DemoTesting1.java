@@ -1,0 +1,34 @@
+package testing_d;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import junit_test_demo.Demotest;
+
+public class DemoTesting1 {
+
+	@Test
+	@DisplayName("Negative Test")
+	
+	public void Test1()
+	{
+		Demotest d1 = new Demotest();
+		System.out.println(d1.add(10,20));
+		int a = d1.add(-10, 20);
+		//assertEquals(a,30);
+	}
+	
+	@Test
+	@DisplayName("Postive Test")
+	@Disabled
+	public void Test2()
+	{
+		Demotest d1 = new Demotest();
+		System.out.println(d1.add(23,20));
+	}
+	
+	
+}

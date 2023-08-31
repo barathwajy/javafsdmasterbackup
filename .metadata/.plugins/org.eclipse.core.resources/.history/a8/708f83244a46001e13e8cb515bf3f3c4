@@ -1,0 +1,136 @@
+package org.onlinebookstore.books;
+
+import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
+
+public class Admin extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField txtEnterUsername;
+	private JPasswordField passwordField;
+	private JLabel lblNewLabel;
+	private JLabel lblNewLabel_1;
+	int flag=1;
+	/**
+	 * Launch the application.
+	 */
+	
+	
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Admin frame = new Admin();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 * @throws SQLException 
+	 */
+	public Admin() throws SQLException {
+		//int flag=0; 
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(160, 0, 800, 600);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		
+		txtEnterUsername = new JTextField();
+		txtEnterUsername.setBounds(298, 209, 138, 20);
+		contentPane.add(txtEnterUsername);
+		txtEnterUsername.setColumns(10);
+		
+		passwordField = new JPasswordField();
+		passwordField.setBounds(298, 265, 138, 20);
+		contentPane.add(passwordField);
+		
+		lblNewLabel = new JLabel("USER NAME");
+		lblNewLabel.setBounds(335, 184, 127, 14);
+		contentPane.add(lblNewLabel);
+		
+		lblNewLabel_1 = new JLabel("PASSWORD");
+		lblNewLabel_1.setBounds(335, 240, 163, 14);
+		contentPane.add(lblNewLabel_1);
+		
+		
+		
+		
+		JButton btnNewButton = new JButton("Login");
+		btnNewButton.setBounds(319, 303, 100, 36);
+		contentPane.add(btnNewButton);
+		btnNewButton.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				Connection c = DB_Connect.connect();
+				String usern = txtEnterUsername.getText();
+				String userpw = passwordField.getSelectedText();
+				
+				String sql = "Select password from admin where username=?";
+				
+				try {
+					PreparedStatement p1 = c.prepareStatement(sql);
+					p1.setString(1, usern);
+					
+					ResultSet s1 = p1.executeQuery();
+					String pw = null;
+					if(s1.next())
+					{
+						pw = s1.getString(1);
+						System.out.println(pw,userpw);
+						
+						if(userpw.equals(pw))
+						{
+							flag=1;
+						}
+					}
+					
+					
+					
+				}
+				catch(Exception exc)
+				{
+					exc.printStackTrace();
+				}
+				
+				
+				
+				if(flag==1)
+				{
+					AdminConsole ac = new AdminConsole();
+					dispose();
+					ac.setVisible(true);
+				}
+			}
+			
+		});
+	
+		
+	
+		
+	}
+}

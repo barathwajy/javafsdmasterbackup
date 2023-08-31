@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;org.onlinebookstore.books.CustomerLogin&apos; to &apos;CustomerSignUp&apos;&#x0D;&#x0A;- Original project: &apos;books&apos;&#x0D;&#x0A;- Original element: &apos;org.onlinebookstore.books.CustomerLogin&apos;&#x0D;&#x0A;- Renamed element: &apos;org.onlinebookstore.books.CustomerSignUp&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CustomerLogin&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;org.onlinebookstore.books{CustomerLogin.java[CustomerLogin" matchStrategy="1" name="CustomerSignUp" qualified="false" references="true" similarDeclarations="false" stamp="1693307496022" textual="false" version="1.0"/>
+</session>

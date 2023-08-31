@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;junit_test_demo.Nested&apos; to &apos;Nestedemo&apos;&#x0D;&#x0A;- Original project: &apos;Junit_Testing_demo&apos;&#x0D;&#x0A;- Original element: &apos;junit_test_demo.Nested&apos;&#x0D;&#x0A;- Renamed element: &apos;junit_test_demo.Nestedemo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Nested&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;junit_test_demo{Nested.java[Nested" matchStrategy="1" name="Nestedemo" qualified="false" references="true" similarDeclarations="false" stamp="1693291431920" textual="false" version="1.0"/>
+</session>

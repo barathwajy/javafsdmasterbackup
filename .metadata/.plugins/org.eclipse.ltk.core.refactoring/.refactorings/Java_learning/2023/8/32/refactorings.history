@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;collections101.Enumset&apos; to &apos;Enumset1&apos;&#x0D;&#x0A;- Original project: &apos;Java_learning&apos;&#x0D;&#x0A;- Original element: &apos;collections101.Enumset&apos;&#x0D;&#x0A;- Renamed element: &apos;collections101.Enumset1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Enumset&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;collections101{Enumset.java[Enumset" matchStrategy="1" name="Enumset1" qualified="false" references="true" similarDeclarations="false" stamp="1691644103575" textual="false" version="1.0"/>
+</session>
